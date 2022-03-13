@@ -129,19 +129,19 @@ function althumbShow(e){
    clearInterval(myInterval);
   }
 
+
   //short cut var for getting images of the Alaska folder
   const al = document.querySelector(".al");
   const althumb = al.querySelectorAll("img");
   const mainImage = document.querySelector("#mainimage");
   const caption = al.querySelector(".caption");
-  const back_btn = document.querySelector(".back-btn");
-const next_btn = document.querySelector(".next-btn");   
-  let nextUp = "";
+  //const back_btn = document.querySelector(".back-btn");
+// const next_btn = document.querySelector(".next-btn");   
+  
+   //next_btn.addEventListener("click",althumbShow);
+   //back_btn.addEventListener("click", althumbShow);
 
-  next_btn.addEventListener("click",althumbShow);
-   back_btn.addEventListener("click", althumbShow);
-
-  caption.innerHTML = `${mainImage.alt}`;
+   //caption.innerHTML = `${mainImage.alt}`;
 
   
   //Removing the hide and position property from each image to display the al thumbnail  image of the Alaska folder

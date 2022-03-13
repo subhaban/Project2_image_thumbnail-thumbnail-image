@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project_2 Thumbnail Image Gallery </title>
+  <link rel="stylesheet" href="c/main.css">
+</head>
+
+<body>
+
+  <h1> Summer Vaccation Trip </h1>
+
+  <section>
+    <h2>Where Do you want to spent you vaccation this year? </h2>
+    <nav>
+      <ul>
+        <li><a href="#alaska" onclick="althumbShow(al1)">Alaska</li></a>
+        <li><a href="#hawaii" onclick="hathumbShow(ha1)">Hawaii</li></a>
+        <li><a href="#ys" onclick="ysthumbShow(ys1)">Yellowstone</li></a>
+      </ul>
+    </nav>
+
+
+    <figure class="frame">
+
+      <img id="mainimage" class="slide current" src="i/al1.png" alt="1.Alaska">
+      <img  id ="hamainimage" class="slide visible" src="i/ha1.png" alt="2.Hawaii">
+      <img id ="ysmainimage" class="slide visible" src="i/ys1.png" alt="3.Yellowstone">
+      <img class="slide visible" src="i/al5.png" alt="4.Alaska Wild Life">
+      <img class="slide visible" src="i/ha3.png" alt="5.Hawaii slide 2">
+      <img class="slide visible" src="i/ys2.png" alt="6.Yellowstone slide 2">
+
+      <figcaption class="caption"></figcaption>
+    </figure>
+
+    <div class="controls">
+      <a href="#" class="back-btn">&#10094;</a>
+      <a href="#" class="next-btn">&#10095;</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="placecontainer">
+
+      <div id="alaska" class="al tbcontainer">
+
+        <img id="al1" class="thumbnail current" src="i/al1.png" onclick="althumbShow(al1)"
+          alt="Alaska-Land of Glaciers">
+        <img id="al2" class="thumbnail" src="i/al2.png" onclick="althumbShow(al2)" alt="Northern Lights">
+        <img id="al3" class="thumbnail" src="i/al3.png" onclick="althumbShow(al3)" alt="Alaska Lake ">
+        <img id="al4" class="thumbnail" src="i/al4.png" onclick="althumbShow(al4)" alt="Denali National Park ">
+        <img id="al5" class="thumbnail" src="i/al5.png" onclick="althumbShow(al5)" alt="Wild Life of Alaska ">
+
+      </div>
+
+      <div id="hawaii" class="ha tbcontainer">
+        <img id="ha1" class="thumbnail  current" src="i/ha1.png" onclick="hathumbShow(ha1)" alt="Hawaii Slide1">
+        <img id="ha2" class="thumbnail" src="i/ha2.png" onclick="hathumbShow(ha2)" alt="Hawaii Slide2">
+        <img id="ha3" class="thumbnail" src="i/ha3.png" onclick="hathumbShow(ha3)" alt="Hawaii Slide3">
+        <img id="ha4" class="thumbnail" src="i/ha4.png" onclick="hathumbShow(ha4)" alt="Hawaii Slide4">
+        <img id="ha5" class="thumbnail" src="i/ha5.png" onclick="hathumbShow(ha5)" alt="Hawaii Slide5">
+      </div>
+
+      <div id="ys" class="ys tbcontainer">
+        
+        <img id ="ys1" class="thumbnail current" src="i/ys1.png" onclick="ysthumbShow(ys1)" alt="Yellowstone Prismatic Spring">
+        <img  id ="ys2"class="thumbnail" src="i/ys2.png" onclick="ysthumbShow(ys2)"  alt="Yellowstone _Old Faithful Gyser">
+        <img  id ="ys3"class="thumbnail" src="i/ys3.png"  onclick="ysthumbShow(ys3)"alt="Yellowstone Grand Canyon">
+        <img  id ="ys4"class="thumbnail" src="i/ys4.png"  onclick="ysthumbShow(ys4)" alt="Mammoth Hot Spring">
+        <img  id ="ys5"class="thumbnail" src="i/ys5.png"  onclick="ysthumbShow(ys5)" alt="Yellowstone Morning Glory">
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="j/main.js"></script>
+
+</body>
+
+</html>

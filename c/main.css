@@ -104,7 +104,7 @@
   .placecontainer{
 
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content:space-evenly;
     margin:1rem;
     padding:2px;
@@ -141,7 +141,7 @@
   
   .tbcontainer{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:center;
     margin:1rem;
     cursor:pointer;
